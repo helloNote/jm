@@ -8,9 +8,11 @@
 
     <link rel="stylesheet" href="../lib/css/swiper.min.css">
     <link rel="stylesheet" href="../lib/css/fullpage.css">
+    <link rel="stylesheet" href="../lib/css/animate.min.css">
     <link rel="stylesheet" href="../lib/css/common.css">
-    <link rel="stylesheet" href="../lib/css/aos.css">
+    <!-- <link rel="stylesheet" href="../lib/css/aos.css"> -->
     <link rel="stylesheet" href="../css/content.css">
+    
 </head>
 <body >
 <div id="fullpage">
@@ -26,7 +28,7 @@
                     </div>
 
                     <ul class="flex jm-title fr">
-                        <li> <a href="#firstPage">际美投资</a> </li>
+                        <li class="checked_li"> <a href="#firstPage">际美投资</a> </li>
                         <li> <a href="#secondPage">项目介绍</a> </li>
                         <li> <a href="#3rdPage">关于我们</a> </li>
                         <li> <a href="">企业愿景</a> </li>
@@ -37,13 +39,16 @@
                 <!-- 轮播开始 -->
                 <div class="swiper-container pr" id="bannerSwiper">
                     <!-- 第一部分的内容开始 -->
-                    <div class="jm-investment pa" aos="fade-up">
+                    <div class="jm-investment pa" >
                         <div class="tr jm-investment-text">
                             <h2>际美投资管理</h2><br>
                             <i ></i>
-                            <p class="fs16">多元化的投资控股平台，目前旗下有儿童早教（奇想空间）、
-                                海外医疗（小羊医生）以及私募股权基金业务，全部为际美投资
-                                控股。希望以金融为纽带，以教育和医疗为重点，打造一个综合性控股平台。
+                            <p class="fs16">际美投资管理有限公司是一个多元化投资控股平台，
+                                主要涉及教育、医疗以及私募股权投资基金等行业。公司希望以金融为纽带，
+                                不断探索新科技、新模式在早期教育以及医疗领域的应用，为社会发展作出贡献。
+                            </p>
+                            <p class="fs16">目前，公司通过旗下的奇想空间（北京）教育科技有限公司、
+                                上海西潼健康管理有限公司以及宁波吉信汇金投资管理有限公司三家实体对上述三个领域实行具体管理及运营。
                             </p>
                         </div>
                     </div>
@@ -72,7 +77,7 @@
                 控股平台。
             </p>
             <div class="project-imgs flex">
-                <div class="project-case-1 pr">
+                <div class="project-case-1 pr" data-aos="flip-left">
                     <div class="project-case-con pa tc project-case-con-sheep">
                         <img src="../images/logo_dr.sheep.png" alt="小羊医生">
                         <p class="fs14">小羊医生让中国每个家庭拥有海外家庭医生，多元化满足中国家庭对生活健康的医疗需求</p>
@@ -82,15 +87,16 @@
                 <div class="project-case-2 pr">
                     <div class="project-case-con pa tc">
                         <img src="../images/logo_space.png" alt="奇想空间">
-                        <p class="fs14 text-orange">来着未来的奇想空间，国内首家AR科技儿童成长乐园。提升孩子的创造想象力，我们更专业。</p>
+                        <p class="fs14 text-orange">奇想空间（北京）教育科技有限公司涉及儿童早期教育领域，
+                            上海西潼健康管理有限公司涉及海外医疗领域，宁波吉信汇金投资管理有限公司涉及私募股权基金投资领域。</p>
                     </div>
                     <div class="project-case-mask pa"></div>
                 </div>
                 <div class="project-case-3 pr">
                     <div class="project-case-con pa tc">
                         <img src="../images/logo_fund.png" alt="私募基金">
-                        <p class="fs14">际美控股子公司已经与中关村发展建设集团签订协议,际美、吉林省信托、中关村发展集团将
-                            合作成立私募股权基金管理公司。同时，际美希望不断探索新的技术在早起教育和医疗领域不同场景的应用。
+                        <p class="fs14">3、	宁波吉信汇金投资管理有限公司已经与中关村发展建设集团、
+                            吉林省信用担保投资集团有限公司签订战略合作协议，三方将合作成立私募股权投资管理公司，成立专业管理团队。
                         </p>
                     </div>
                     <div class="project-case-mask pa"></div>
@@ -111,11 +117,11 @@
             </div>
             <div class="jm-company-right pr">
                 <div class="jm-company-con pa tc jm-company-con-right">
-                    <h3>强大公司规模</h3>
+                    <h3>强大实力</h3>
                     <i class="inline"></i>
-                    <p class="fs14">平台下属机构员工总数超过200人，都是儿童早教和医疗服务领域的专家，
-                        早教方面拥有日本的优秀技术的研发团队和国内的优秀的课程研发团队，海外医疗与台湾、日本、德国
-                        等各种机构建立紧密的合作。
+                    <p class="fs14">际美投资管理有限公司下属机构全部员工超过200人，
+                        都在儿童早教以及医疗服务领域有着丰富的经验。另外，儿童早教方面还拥有日本的优秀技术团队和国内顶尖的课程研发团队，
+                        海外医疗领域与台湾、日本以及德国最好的医疗机构与医生建立了紧密的合作关系
                     </p>
                 </div>
                 <div class="project-case-mask pa"></div>
@@ -135,9 +141,9 @@
                 <div class="jm-vision-con pa">
                     <h3 class="text-orange">公司愿景</h3>
                     <i class="inline"></i>
-                    <p class="fs14">公司的愿景是希望0-6岁儿童的健康成长探索一条新颖的道路，为中国中高端人群
-                        享受更好的医疗服务进行努力。并希望能够在这两个领域带来新的技术、或者新的
-                        商业模式的机构合作，共同在这两个领域发展。
+                    <p class="fs14">际美希望通过旗下的专业公司，为中国儿童的早期教育探索出一条新颖的道路，
+                        成为中国中高端人群能够享受全世界最好的医疗服务的桥梁，
+                        勇于尝试，不断创新，让世界最好的科学技术及创新模式能够为中国儿童的教育及中国人的健康所用。
                     </p>
                 </div>
                 <div class="jm-vision-mask pa"></div>
@@ -170,9 +176,10 @@
 
     <!-- 引用的js -->
     <script src="../lib/js/jq.js"></script>  
-    <script src="../lib/js/aos.js"></script>
+    <!-- <script src="../lib/js/aos.js"></script> -->
     <script src="../lib/js/fullpage.js"></script>  
     <script src="../lib/js/swiper.js"></script>
+    <script src="../lib/js/wow.min.js"></script>
     
     <script>
 
@@ -204,15 +211,22 @@
             verticalCentered: false,
             anchors: ['firstPage', 'secondPage', '3rdPage'],
             //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
-            css3:false
+            css3:false,
+
+            afterRender: function(){
+                wow = new WOW({
+                    animateClass: 'animated',
+                });
+                wow.init();
+            }
         });
         
-        AOS.init({   
-            offset: 200,   
-            duration: 600,   
-            easing: 'ease-in-sine',   
-            delay: 100, 
-        });
+        // AOS.init({   
+        //     offset: 200,   
+        //     duration: 600,   
+        //     easing: 'ease-in-sine',   
+        //     delay: 100, 
+        // });
 
     </script>
 </body>

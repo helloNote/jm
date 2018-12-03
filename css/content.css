@@ -1,3 +1,7 @@
+
+body,html{
+    font: 12px/1.5 Tahoma, Arial, Helvetica, sans-serif;
+}
 .text-orange{
     color: #ffd235 !important;
 }
@@ -89,7 +93,7 @@ a{
 }
 .jm-investment{
     z-index: 99;
-    height: 55%;
+    height: 60%;
     padding: 0 75px;
     background: rgba(84,148,167,.9);
     top: 0;
@@ -356,10 +360,9 @@ a{
 /* 项目介绍页面 */
 .project-swiper-container{
     width: 100%;
-    height: 65vh;
+    height:65vh;
 }
 .checked_li{
-   
     border-bottom: 2px solid #ffd235 !important;
 }
 .checked_li a{
@@ -387,8 +390,11 @@ a{
     padding: 50px;
     z-index: 99;
     left: 20%;
-    top: 40%;
+    top: 35%;
     color: #1a1818;
+}
+.project-banner-con h2{
+    font-size: 30px;
 }
 .project-banner-con i{
     width: 60px;
@@ -575,4 +581,287 @@ ul{
 }
 .project-map-wrap img{
     height: 100%;
+}
+
+
+
+
+
+/* 小羊医生 */
+.sheep-banner{
+    background: url('../images/dr.sheep_banner.jpg') no-repeat;
+    background-size: 100%;
+}
+.sheep-content-wrap{
+    width: 1200px;
+    margin: auto;
+    height: 700px;
+}
+.sheep-banner-con{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    
+}
+.sheep-banner-div{
+    width: 450px;
+    padding: 50px;
+    background: rgba(23, 186, 241,.9);
+    top: 32%;
+    color: #fff;
+    border-radius: 10px;
+}
+.sheep-banner-div span{
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+.sheep-banner-div h3{
+    font-size: 32px;
+    margin: 15px 0;
+}
+.sheep-banner-div p{
+    line-height: 30px;
+}
+.sheep-dr-content{
+    width: 100%;
+    height: 100%;
+}
+.sheep-dr-content > div{
+    flex: 1;
+    width: 50%;
+}
+.sheep-dr-left{
+    background: url('../images/ic_element_1.png') no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 410px;
+}
+.sheep-logo{
+    width: 150px;
+    margin-top: 100px;
+}
+.sheep-dr-left p{
+    padding: 20px 60px;
+    line-height: 30px;
+    color: #1a1818;
+}
+.brand-log{
+    width: 80px;
+}
+.sheep-dr-cover{
+    background: url('../images/pic_element_greey.png') no-repeat;
+    background-size: 100%;
+    width: 120px;
+    height: 250px;
+    top: 10%;
+    left: -30px;
+}
+.sheep-dr-con{
+    width: 410px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.sheep-dr-con h3{
+    font-size: 38px;
+    color: #17baf1;
+    margin-top: 10px;
+}
+.sheep-dr-con p{
+    line-height: 30px;
+    color: #1a1818;
+    margin: 15px 0;
+}
+.sheep-dr-txt{
+    color: #17baf1;
+}
+.mt50{
+    margin-top: 20%;
+}
+.sheep-content-2{
+    width: 100%;
+    height: 560px;
+    background: url('../images/bg_vision_dr.sheep.jpg') no-repeat;
+    background-size: 100%;
+}
+.sheep-dr-t{
+    color: #fff;
+    width: 550px;
+    padding-top: 100px;
+    overflow: hidden;
+    height: 100%;
+    left: 220px;
+    z-index: 999;
+}
+.sheep-dr-t span{
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    margin-right: 80px;
+}
+.sheep-dr-t h2{
+    font-size: 52px;
+    margin-top: 20px;
+}
+.sheep-dr-t h3{
+    font-size: 26px;
+    font-weight: normal;
+    margin-top: 25px;
+}
+.sheep-content-brand-wrap{
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+.ic-logo-white{
+    bottom: 120px;
+    right: 80px;
+    width: 150px;
+}
+.sheep-dr-img{
+    width: calc(100% - 720px);
+    float: right;
+    background: rgba(66, 198, 243, 0.5);
+    height: 100%;
+    left: 170px;
+}
+.sheep-dr-img img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.sheep-server{
+    background: url(../images/pic_element_greey.png) no-repeat;
+    background-size: 100%;
+    width: 120px;
+    height: 250px;
+    top: 10%;
+    right: 100px;
+}
+.sheep-server-con{
+    list-style: none;
+    right: 125px;
+    width: 400px;
+}
+.sheep-server-con li{
+    list-style: none;
+    right: 100px;
+    width: 170px;
+    height: 50px;
+    background: url('../images/ic_rectangle_1.png') no-repeat;
+    background-size: 100%;
+    margin: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    float: left;
+}
+.sheep-server-con li a{
+    color: #1a1818;
+}
+.sheep-server-con li:hover{
+    background: url('../images/ic_rectangle_2.png') no-repeat;
+    background-size: 100%;
+}
+.sheep-server-con li:hover a{
+    color: #fff;
+}
+.sheep-server-title{
+    font-size: 38px;
+    color: #17baf1;
+    margin-right: 140px;
+    margin-top: 18%;
+}
+.sheep-server-set-title{
+    font-size: 38px;
+    color: #17baf1;
+    margin-right: 140px;
+    margin-top: 30%;
+}
+.sheep-server-set-con{
+    list-style: none;
+    right: 125px;
+    margin-top: 20px;
+}
+.sheep-server-set-con li{
+    margin-bottom: 20px;
+}
+.sheep-server-set-list{
+    width: 260px;
+    height: 50px;
+    background: url(../images/ic_rectangle_3.png) no-repeat;
+    background-size: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    
+}
+.sheep-server-set-list a{
+    color: #1a1818;
+}
+.sheep-server-set-con img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+.sheep-server-set-list:hover{
+    background: url('../images/ic_rectangle_4.png') no-repeat;
+    background-size: 100%;
+}
+.sheep-server-set-list:hover a{
+    color: #fff;
+}
+.sheep-dr-brand-right{
+    right: -45px;
+}
+.sheep-brand-dr-con{
+    margin-left: 45px;
+}
+.sheep-dr-people{
+    width: 410px;
+    margin-right: 90px;
+    margin-top: 20%;
+}
+.hxys{
+    width: 80px;
+}
+.sheep-dr-texts span{
+    font-size: 14px;
+    color: #9b9b9b;
+    margin-right: 25px;
+}
+.sheep-dr-texts label{
+    font-size: 38px;
+    color: #17baf1;
+    font-weight: bold;
+}
+.sheep-dr-server-txt h3{
+    font-size: 30px;
+    font-weight: normal;
+}
+.sheep-dr-server-txt span{
+    color: #1a1818;
+}
+.sheep-dr-server-txt label{
+    color: #9b9b9b;
+}
+.sheep-dr-hl{
+    margin: 25px 0;
+}
+.sheep-dr-hl p{
+    line-height: 25px;
+    margin: 0;
+}
+.sheep-dr-server-bg{
+    background: #f2f2f2;
+}
+.sheep-dr-server-top{
+    margin-top: -90px;
+    height: 750px;
 }
