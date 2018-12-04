@@ -31,6 +31,9 @@ body,html{
     display: table;
     padding: 0 50px;
     z-index: 10;
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 .jm-logo{
     display: table-cell;
@@ -53,12 +56,23 @@ a{
 .jm-title li a{
     color: #fff;
     font-size: 16px;
+    display: inline-block;
+    height: 100%;
 }
 .jm-title li:hover a{
     color: #ffd235;
 }
 .jm-title li:hover{
     border-bottom: 2px solid #ffd235;
+}
+
+.nav-animation{
+    display: none;
+    transition: all 3s ease-in-out; 
+}
+.show-nav-animation{
+    display: table;
+    transition: all 3s ease-in; 
 }
 
 /*banner*/
@@ -155,15 +169,15 @@ a{
 }
 .project-case-1{
     background: url('../images/pic_dr.sheep.png') no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 .project-case-2{
     background: url('../images/pic_space.png') no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 .project-case-3{
     background: url('../images/pic_fund.png') no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 .project-case-mask{
     width: 100%;
@@ -192,8 +206,9 @@ a{
     width: 160px;
 }
 .project-imgs > div:hover .project-case-mask{
-    background: rgba(255, 255, 255, .6);
+    background: rgba(255, 255, 255, .3);
     /* z-index: 11; */
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -209,11 +224,11 @@ a{
 }
 .jm-company-left{
     background: url('../images/pic_team.png') no-repeat;
-    background-size: 100% ;
+    background-size: 100% 100%;
 }
 .jm-company-right{
     background: url('../images/pic_company.png') no-repeat;
-    background-size: 100% ;
+    background-size: 100% 100%;
 }
 .jm-company-con{
     margin: 0 105px;
@@ -239,22 +254,38 @@ a{
 .jm-company-con p{
     line-height: 30px;
 }
-.jm-company-con-right{
+/* .jm-company-con-right{
     background: rgba(84,148,167,.9);
     border: 8px solid transparent;
-}
+} */
 .jm-company-con-right h3{
-    color: #ffd235;
+    color: rgba(84,148,167,1);
 }
 .jm-company-con-right i{
-    background: #ffd235;
+    background: rgba(84,148,167,1);
 }
 .jm-company-con-right p{
-    color: #fff;
+    color: rgba(84,148,167,1);
 }
 .jm-company-wrap > div:hover .project-case-mask{
     background: rgba(255, 255, 255, .6);
+    transition: all 0.5s ease-in-out;
 }
+.jm-company-wrap > div:hover .jm-company-con-right{
+    background: rgba(84,148,167,.9);
+    border: 8px solid transparent;
+}
+.jm-company-wrap > div:hover .jm-company-con-right h3{
+    color: #ffd235;
+}
+.jm-company-wrap > div:hover .jm-company-con-right i{
+    background: #ffd235;
+}
+.jm-company-wrap > div:hover .jm-company-con-right p{
+    color: #fff;
+}
+
+
 
 
 .jm-vision-wrap {
@@ -309,12 +340,15 @@ a{
 
 .jm-contact-wrap{
     height: 100vh;
+    background: #f2f2f2;
+    display: table;
+    width: 100%;
 }
 .contact-wrap{
     width: 100%;
     height: calc(100vh - 60px);
     background: url('../images/bg_connect.png') no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 .contact-us{
     width: 60%;
@@ -323,7 +357,7 @@ a{
     background-size: 100%;
     margin:0 auto;
     overflow: hidden;
-    top: 22%;
+    top: 18%;
     padding: 75px 30px;
 }
 .contact-us h2{
@@ -374,7 +408,7 @@ a{
 }
 .project-spaces-wrap{
     width: 100%;
-    height: 100vh;
+    height: 750px;
     background: #fff;
 }
 .project-spaces-wrap > div{
@@ -480,7 +514,7 @@ a{
 }
 .project-development-wrap{
     width: 100%;
-    height: 100vh;
+    height: 670px;
 }
 
 .project-development-con{
@@ -489,8 +523,8 @@ a{
 }
 
 .project-development-center img{
-    width: 11px;
-    height: 430px;
+    width: 8px;
+    height: 457px;
 }
 
 .project-development-title h2{
@@ -578,9 +612,11 @@ ul{
 .project-map-wrap{
     width: 100%;
     height: calc(100vh - 60px);
+    display: table-cell;
+    vertical-align: middle;
 }
 .project-map-wrap img{
-    height: 100%;
+    width: 600px;
 }
 
 
@@ -690,12 +726,12 @@ ul{
 }
 .sheep-dr-t{
     color: #fff;
-    width: 550px;
+    width: 50%;
     padding-top: 100px;
     overflow: hidden;
     height: 100%;
-    left: 220px;
     z-index: 999;
+    right: -50px;
 }
 .sheep-dr-t span{
     padding: 10px;
@@ -723,11 +759,10 @@ ul{
     width: 150px;
 }
 .sheep-dr-img{
-    width: calc(100% - 720px);
+    width: calc(50% + 50px);
     float: right;
     background: rgba(66, 198, 243, 0.5);
     height: 100%;
-    left: 170px;
 }
 .sheep-dr-img img{
     position: absolute;
@@ -738,7 +773,7 @@ ul{
     margin: auto;
 }
 .sheep-server{
-    background: url(../images/pic_element_greey.png) no-repeat;
+    background: url('../images/pic_element_greey.png') no-repeat;
     background-size: 100%;
     width: 120px;
     height: 250px;
@@ -797,7 +832,7 @@ ul{
 .sheep-server-set-list{
     width: 260px;
     height: 50px;
-    background: url(../images/ic_rectangle_3.png) no-repeat;
+    background: url('../images/ic_rectangle_3.png') no-repeat;
     background-size: 100%;
     padding-right: 20px;
     padding-left: 20px;
@@ -821,12 +856,6 @@ ul{
 .sheep-server-set-list:hover a{
     color: #fff;
 }
-.sheep-dr-brand-right{
-    right: -45px;
-}
-.sheep-brand-dr-con{
-    margin-left: 45px;
-}
 .sheep-dr-people{
     width: 410px;
     margin-right: 90px;
@@ -834,6 +863,11 @@ ul{
 }
 .hxys{
     width: 80px;
+}
+.sheep-brand-dr-con{
+    margin-left: -25px;
+    background: url('../images/ic_element_dr.png') no-repeat;
+    background-size: 100%;
 }
 .sheep-dr-texts span{
     font-size: 14px;

@@ -35,18 +35,19 @@
 
                 <!-- 轮播开始 -->
                 <div class="project-swiper-container pr" id="bannerSwiper">
-                    <div class="project-banner-con pa">
-                        <h2>国家首内AR儿童成长乐园</h2>
-                        <i class="inline"></i>
-                        <p class="fs14">提升还在创造想象力，我们更专业</p>
-                    </div>
+                    
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" >
-                            <img src="../images/qixiang_banner.jpg" alt="奇想空间">
+                        <div class="swiper-slide pr" >
+                            <img src="../images/qixiang_banner.jpg" alt="奇想空间" class="pa">
+                            <div class="project-banner-con pa" aos="fade-right">
+                                <h2>源于英国的儿童成长学院</h2>
+                                <i class="inline"></i>
+                                <p class="fs14">将儿童教育与前沿科学技术结合，为每个梦想的实现的强大支撑</p>
+                            </div>
                         </div>
-                        <div class="swiper-slide" >
+                        <!-- <div class="swiper-slide" >
                             <img src="../images/qixiang_banner.jpg" alt="奇想空间">
-                        </div>
+                        </div> -->
                     </div>
                     <div id="bannerpagination" class="pagination pr tc"></div>
                 </div>
@@ -59,11 +60,11 @@
         <section class="section" id="section1">
             <div class="project-spaces-wrap flex">
                 <div class="project-spaces-left tc">
-                    <img src="../images/logo_qixiang2.png" alt="奇想空间">
+                    <img src="../images/logo_qixiang2.png" alt="奇想空间" >
                 </div>
-                <div class="project-spaces-right">
+                <div class="project-spaces-right" >
 
-                    <div class="project-spaces-right-con project-spaces-right-con-mt">
+                    <div class="project-spaces-right-con project-spaces-right-con-mt" >
                         <div class="title-text">
                             <h3 class="pr">奇想空间儿童成长乐园</h3>
                         </div>
@@ -78,7 +79,7 @@
                         </div>
                     </div>
 
-                    <div class="project-spaces-right-con">
+                    <div class="project-spaces-right-con" aos="fade-up-left">
                         <div class="title-text">
                             <h3 class="pr">奇想空间成长学院</h3>
                         </div>
@@ -104,7 +105,8 @@
         <!-- 唤回孩子....开始 -->
         <section class="section" id="section2">
             <div class="project-start-wrap pr">
-                <div class="project-start-con pa">
+                <div class="project-start-con pa" aos="fade-up"
+                aos-anchor-placement="bottom-bottom">
                     <i class="inline"></i>
                     <h2>唤回孩子们的快乐</h2>
                     <div class="project-background-box"> <h2 class="project-background-box-text">回归教育的初心</h2> </div>
@@ -131,7 +133,7 @@
                             <img src="../images/Group 4.png" alt="中间线">
                         </div>
                         <ul class="pa project-development-list">
-                            <li>
+                            <li aos="fade-right">
                                 <div class="project-list-title">
                                     <h3 class="pr">2017年底</h3>
                                 </div>
@@ -141,7 +143,7 @@
                                 </p>
                                 <div class="bg-img-icon"></div>
                             </li>
-                            <li>
+                            <li aos="fade-left">
                                 <div class="project-list-title">
                                     <h3 class="pr">迄今为止</h3>
                                 </div>
@@ -150,7 +152,7 @@
                                 </p>
                                 <div class="bg-img-icon"></div>
                             </li>
-                            <li>
+                            <li aos="fade-right">
                                 <div class="project-list-title">
                                     <h3 class="pr">目前</h3>
                                 </div>
@@ -171,15 +173,16 @@
             <div class="project-map-wrap tc">
                 <img src="../images/pic_map.png" alt="地图">
             </div>
-            <!-- 尾部开始 -->
-            <div class="footer tc fs14">Copyright © 2018宁波际美投资管理有限公司 保留所有权利</div>
-            <!-- 尾部结束 -->
         </section>
         <!-- 地图结束 -->
 
     </section>
     <!-- 内容的结束 -->
-
+    <footer>
+         <!-- 尾部开始 -->
+         <div class="footer tc fs14">Copyright © 2018宁波际美投资管理有限公司 保留所有权利</div>
+         <!-- 尾部结束 -->
+    </footer>
     
 </div>
 
@@ -210,18 +213,11 @@
                 prevEl: '.arrow-left',
             }
         });
-
-
-        var myFullpage = new fullpage('#fullpage', {
-            verticalCentered: false,
-            anchors: ['firstPage', 'secondPage', '3rdPage','4rdPage'],
-        });
         
         AOS.init({
 			easing: 'ease-out-back',
 			duration: 1000
 		});
-
     </script>
 </body>
 </html>
