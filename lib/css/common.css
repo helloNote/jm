@@ -23,6 +23,7 @@
 /* 定位 */
 .pa{position: absolute}
 .pr{position: relative}
+.pf{position: fixed;}
 
 
 /* flex，包括flex的兼容性 */

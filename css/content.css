@@ -8,6 +8,7 @@ body,html{
 .text-blue{
     color:rgba(84,148,167,1);
 }
+
 .section{
     overflow: hidden;
 }
@@ -31,7 +32,6 @@ body,html{
     display: table;
     padding: 0 50px;
     z-index: 10;
-    position: fixed;
     top: 0;
     z-index: 999;
 }
@@ -107,8 +107,7 @@ a{
 }
 .jm-investment{
     z-index: 99;
-    height: 60%;
-    padding: 0 75px;
+    padding: 80px 75px;
     background: rgba(84,148,167,.9);
     top: 0;
     bottom: 0;
@@ -339,7 +338,7 @@ a{
 }
 
 .jm-contact-wrap{
-    height: 100vh;
+    height: 900px;
     background: #f2f2f2;
     display: table;
     width: 100%;
@@ -519,7 +518,7 @@ a{
 
 .project-development-con{
    margin: auto;
-   padding-top: 8%;
+   padding-top: 105px;
 }
 
 .project-development-center img{
@@ -626,7 +625,7 @@ ul{
 /* 小羊医生 */
 .sheep-banner{
     background: url('../images/dr.sheep_banner.jpg') no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 .sheep-content-wrap{
     width: 1200px;
@@ -700,7 +699,7 @@ ul{
 .sheep-dr-con{
     width: 410px;
     overflow: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .sheep-dr-con h3{
     font-size: 38px;
@@ -890,7 +889,7 @@ ul{
     color: #9b9b9b;
 }
 .sheep-dr-hl{
-    margin: 25px 0;
+    margin: 35px 0;
 }
 .sheep-dr-hl p{
     line-height: 25px;
@@ -902,4 +901,7 @@ ul{
 .sheep-dr-server-top{
     margin-top: -90px;
     height: 750px;
+}
+.sheep-line{
+    margin-top: 28px !important;
 }
