@@ -29,6 +29,8 @@
             <li> <a href="">企业愿景</a> </li>
             <li> <a href="">联系我们</a> </li>
         </ul>
+
+        <a href="javascript:void(0)" class="switch">英文</a>
     </nav>
 
     <!-- 内容的开始 -->
@@ -251,7 +253,7 @@
 
         var myFullpage = new fullpage('#fullpage', {
             verticalCentered: false,
-            anchors: ['firstPage', 'secondPage', '3rdPage'],
+            anchors: ['firstPage', 'secondPage', '3rdPage' ,'4rdPage' ,'5rdPage'],
             //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
             css3:true,
             scrollingSpeed: 900,
@@ -260,8 +262,9 @@
             afterLoad: function(item){
                 var first = location.href.split('#')[1] , show = $('.jm-header-nav').attr('show');
                 
+                console.log(first )
                 if(show == 'true') return;
-                if(first == 'firstPage'){
+                if(first == 'firstPage' || first == undefined){
                     $('.jm-header-nav').removeClass('nav-animation')
                     $('.jm-header-nav').addClass('show-nav-animation')
                 }else{

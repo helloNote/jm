@@ -907,3 +907,13 @@ ul{
     margin-top: 28px !important;
 }
 
+.switch{
+    position: absolute;
+    right: 0;
+    color: orange;
+    border: 1px solid #fff;
+    padding: 3px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    margin: 5px;
+}
